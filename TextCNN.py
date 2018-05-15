@@ -25,7 +25,7 @@ class TextCNN(object):
         self.y = tf.placeholder(tf.int32, [None, self.n_class], name='y')
         # self.word_embeddings = tf.constant(embeddings, tf.float32)
         # self.word_embeddings = tf.Variable(embeddings, dtype=tf.float32, trainable=self.update_w2v)
-        if embeddings:
+        if embeddings is not None:
             self.word_embeddings = tf.Variable(embeddings, dtype=tf.float32, trainable=self.update_w2v)
         else:
             self.word_embeddings = tf.Variable(

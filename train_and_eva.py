@@ -1,3 +1,4 @@
+# encoding:utf8
 import numpy as np
 import tensorflow as tf
 from sklearn import metrics

@@ -58,5 +58,5 @@ def predict(x, label=False, prob=False):
 
 
 if __name__ == '__main__':
-    test = ['噪音大、车漆很薄', '性价比很高，价位不高，又皮实耐用。']
+    test = ['性价比高，配送速度快', '环境好。']
     print(predict(test, label=True))
